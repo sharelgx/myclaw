@@ -1,0 +1,86 @@
+# 环境变量和密钥
+.env
+.env.tavily
+*.key
+*.secret
+*.pem
+.webui_secret_key
+
+# 执行审批文件（包含token）
+exec-approvals.json
+
+# 凭据目录
+credentials/
+
+# API 密钥状态文件
+api_key_status.json
+update-check.json
+
+# 模型状态文件（动态生成）
+model_status.json
+
+# OpenClaw 配置文件（包含敏感信息）
+openclaw.json
+openclaw.json.backup.*
+openclaw.json.bak*
+openclaw.json.bak.*
+
+# 日志文件
+logs/
+
+# 媒体文件
+media/
+
+# Python 虚拟环境
+venv/
+env/
+.venv
+
+# IDE 配置
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+
+# 工作空间（用户特定数据）
+workspace/
+workspace-*/
+.workspace/
+
+# Node modules
+node_modules/
+npm-debug.log*
+
+# 操作系统
+Thumbs.db
+.DS_Store
+
+# 备份文件
+*.bak
+*.backup
+
+# 数据库
+*.db
+*.sqlite
+*.sqlite3
+
+# 会话文件
+sessions/
+
+# 内存数据库
+memory/lancedb/
+
+# Feather 缓存
+.feather/
+
+# 浏览器用户数据（包含大文件）
+browser/openclaw/user-data/
+
+# 其他配置文件中的敏感信息（处理这些文件为示例）
+# 建议：创建配置文件示例，如 openclaw.example.json

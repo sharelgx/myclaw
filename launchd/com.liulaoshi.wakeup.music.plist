@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- 标签：唯一标识 -->
+    <key>Label</key>
+    <string>com.liulaoshi.wakeup.music</string>
+
+    <!-- 要执行的程序 -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>osascript</string>
+        <string>/Users/liulaoshi/.openclaw/scripts/wakeup_music_playlist.applescript</string>
+    </array>
+
+    <!-- 定时执行：每天 5:30 -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>5</integer>
+        <key>Minute</key>
+        <integer>30</integer>
+    </dict>
+
+    <!-- 标准输出和错误输出重定向 -->
+    <key>StandardOutPath</key>
+    <string>/Users/liulaoshi/.openclaw/logs/wakeup_music.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/liulaoshi/.openclaw/logs/wakeup_music.err</string>
+
+    <!-- 进程类型：交互式（需要 GUI） -->
+    <key>ProcessType</key>
+    <string>Interactive</string>
+
+    <!-- 环境变量：确保在用户上下文中运行 -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>DISPLAY</key>
+        <string>/private/tmp/com.apple.launchd.wI8DFH2ouI/org.macosforge.x11.0</string>
+    </dict>
+
+    <!-- 调试模式（可选） -->
+    <key>Debug</key>
+    <false/>
+</dict>
+</plist>

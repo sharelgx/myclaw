@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "profiles": {
+    "zai:default": {
+      "type": "api_key",
+      "provider": "zai",
+      "key": "30266adc7ad6477195f40fe2a75f0fcb.h42FTLW47No064sT"
+    },
+    "openrouter:default": {
+      "type": "api_key",
+      "provider": "openrouter",
+      "key": "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"
+    },
+    "openrouter:backup": {
+      "type": "api_key",
+      "provider": "openrouter",
+      "key": "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"
+    },
+    "zai:paid": {
+      "type": "api_key",
+      "provider": "zai",
+      "key": "f4b3f499dbad48caaf44e528b4439771.jjBpJHP2NWM2Grqr"
+    }
+  },
+  "order": {
+    "openrouter": [
+      "openrouter:backup",
+      "openrouter:default"
+    ],
+    "zai": [
+      "zai:paid",
+      "zai:default"
+    ]
+  },
+  "lastGood": {
+    "zai": "zai:default",
+    "openrouter": "openrouter:default"
+  },
+  "usageStats": {
+    "zai:default": {
+      "lastUsed": 1772606790423,
+      "errorCount": 0
+    },
+    "openrouter:default": {
+      "lastUsed": 1773164784770,
+      "errorCount": 0
+    },
+    "openrouter:backup": {
+      "lastUsed": 1773464737635,
+      "errorCount": 0
+    },
+    "zai:paid": {
+      "lastUsed": 1773208022414,
+      "errorCount": 0
+    }
+  }
+}

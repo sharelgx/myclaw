@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.liulaoshi.wakeup.system</string>
+
+    <!-- 仅用于触发系统唤醒，不执行具体任务 -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/true</string>
+    </array>
+
+    <!-- 定时唤醒：每天 5:20 -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>5</integer>
+        <key>Minute</key>
+        <integer>20</integer>
+    </dict>
+
+    <!-- 关键：触发系统从睡眠中唤醒 -->
+    <key>WakeSystem</key>
+    <true/>
+
+    <!-- 仅在系统启动或唤醒时运行 -->
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>
