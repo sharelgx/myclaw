@@ -231,6 +231,39 @@
           },
           "contextWindow": 200000,
           "maxTokens": 8192
+        },
+        {
+          "id": "openrouter/hunter-alpha",
+          "name": "Hunter Alpha",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 1048576,
+          "maxTokens": 65536
+        },
+        {
+          "id": "openrouter/healer-alpha",
+          "name": "Healer Alpha",
+          "reasoning": true,
+          "input": [
+            "text",
+            "image"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 262144,
+          "maxTokens": 65536
         }
       ],
       "apiKey": "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"
